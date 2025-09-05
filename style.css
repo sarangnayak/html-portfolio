@@ -1,0 +1,121 @@
+/* --- Google Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* --- General Body & Font Styling --- */
+body {
+    font-family: 'Poppins', sans-serif; /* A modern, clean font */
+    background-color: #1a1a2e; /* Deep navy background */
+    color: #e0e0e0; /* Light grey text for readability */
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top */
+    min-height: 100vh;
+}
+
+/* --- Main Portfolio Container --- */
+.container {
+    background-color: #162447; /* Slightly lighter navy for the card */
+    border: 1px solid #1f4068; /* Subtle blue border */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 950px;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+/* --- Typography --- */
+h1 {
+    color: #ffffff; /* Pure white for main heading */
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* Subheading style */
+.subheading {
+    color: #e43f5a; /* A vibrant pink/red accent color */
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/* --- Project Styling --- */
+.project-title a {
+    color: #1f4068; /* A bright, friendly blue for links */
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block; /* Allows for transforms */
+    padding-bottom: 5px; /* Space for the underline effect */
+    position: relative;
+}
+
+.project-title a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #e43f5a;
+    transition: width 0.4s ease;
+}
+
+.project-title a:hover::after {
+    width: 100%;
+    left: 0;
+    background-color: #e43f5a;
+}
+
+/* --- Links --- */
+a {
+    color: #17b978; /* A bright green accent color for general links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* --- Images --- */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 3px solid #1f4068;
+    opacity: 0.85;
+    transition: opacity 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+img:hover {
+    opacity: 1; /* Full opacity on hover */
+    transform: translateY(-5px); /* Lift image slightly on hover */
+    border-color: #e43f5a; /* Highlight with accent color */
+}
+
+/* --- Horizontal Rule --- */
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #1f4068, transparent); /* Faded gradient separator */
+    margin: 60px 0;
+}
+
+/* --- Footer Section --- */
+.footer-nav a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 25px;
+    color: #e0e0e0;
+}
+
+.footer-nav a:hover {
+    color: #e43f5a;
+}
