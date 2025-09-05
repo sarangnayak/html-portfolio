@@ -4,27 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarang's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Sarang's Portfolio</h1>
-    <h2>I'am a Web Developer</h2>
-    <hr>
-    <h2>
-        <a href="./public/movie.html" title="Movie Ranking Project">Movie ranking project</a>
-    </h2>
-    <img src="./assets/images/ss.png" height="200" 
-    alt="Sample image of Movie Ranking Project" 
-    title="Sample image of Movie Rnaking Project">
 
-    <h2>
-        <a href="./public/birthday.html" title="Birthday Invitaion Project">Birthday Invitaiton Project</a>
-    </h2>
-    <img src="./assets/images/ss1.png" height="200" alt="Sample image of Birthday Invitation Project" 
-    title="Sample image of Birthday Invitation Project">
-    <hr>
-    <h3>
-        <a href="./public/about.html" title="Link to about me">About Me</a>
-        <a href="./public/contact.html" title="Link to contact me">Contact Me</a>
-    </h3>
+    <div class="container">
+        <h1>Sarang's Portfolio</h1>
+        <p class="subheading">I'm a Web Developer</p>
+        
+        <hr>
+
+        <h2 class="project-title">
+            <a href="./public/movie.html" title="Movie Ranking Project">Movie Ranking Project</a>
+        </h2>
+        <a href="./public/movie.html">
+            <img src="./assets/images/ss.png" 
+                 alt="Sample image of Movie Ranking Project"
+                 title="Sample image of Movie Ranking Project">
+        </a>
+        
+        <h2 class="project-title">
+            <a href="./public/birthday.html" title="Birthday Invitation Project">Birthday Invitation Project</a>
+        </h2>
+        <a href="./public/birthday.html">
+            <img src="./assets/images/ss1.png"
+                 alt="Sample image of Birthday Invitation Project"
+                 title="Sample image of Birthday Invitation Project">
+        </a>
+        
+        <hr>
+
+        <div class="footer-nav">
+            <a href="./public/about.html" title="Link to about me">About Me</a>
+            <a href="./public/contact.html" title="Link to contact me">Contact Me</a>
+        </div>
+    </div>
+
 </body>
 </html>
