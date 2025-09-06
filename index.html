@@ -3,45 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarang's Portfolio | Web Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About Sarang Nayak</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --background-color-start: #2c3e50;
+            --background-color-end: #4ca1af;
+            --text-color: #ecf0f1;
+            --card-background: rgba(255, 255, 255, 0.1);
+            --border-color: rgba(255, 255, 255, 0.2);
+            --skill-tag-bg: rgba(0, 0, 0, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            background: linear-gradient(45deg, var(--background-color-start), var(--background-color-end));
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .about-card {
+            width: 100%;
+            max-width: 900px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            background: var(--card-background);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            overflow: hidden;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .profile-sidebar {
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(0,0,0,0.1);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--primary-color);
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--text-color);
+            font-size: 1.5rem;
+            margin: 0 0.75rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+            transform: scale(1.2);
+        }
+
+        .main-content {
+            padding: 2.5rem;
+        }
+
+        .main-content h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .main-content p {
+            font-size: 1rem;
+            line-height: 1.8;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        
+        .main-content h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            border-left: 3px solid var(--primary-color);
+            padding-left: 0.75rem;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .skill-tag {
+            background: var(--skill-tag-bg);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 0.8rem 1.8rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .about-card {
+                grid-template-columns: 1fr;
+            }
+            .profile-sidebar {
+                border-bottom: 1px solid var(--border-color);
+            }
+            .main-content h1 {
+                text-align: center;
+            }
+        }
+
+    </style>
 </head>
 <body>
+    <main class="about-card">
+        <div class="profile-sidebar">
+            <img src="https://via.placeholder.com/150" alt="Sarang Nayak" class="profile-pic">
+            <div class="social-links">
+                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" title="Portfolio"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>About Me</h1>
+            <p>I'm Sarang Nayak, currently pursuing an M.Tech at BIT Bangalore. With 2 years of experience as a web developer, I have honed my skills in advanced Java and web technologies. I'm passionate about building efficient, scalable web applications and continuously strive to improve my expertise in software development.</p>
 
-    <div class="container">
-        <header>
-            <h1>Sarang's Portfolio</h1>
-            <p class="subheading">
-                A passionate web developer transforming ideas into beautiful, interactive digital experiences.
-            </p>
-        </header>
-
-        <main class="project-grid">
-            <a href="./public/movie.html" class="project-card">
-                <img src="./assets/images/ss.png" alt="Movie Ranking Project Screenshot">
-                <div class="card-content">
-                    <h2>Movie Ranking Project</h2>
-                    <p>A curated list of my all-time favorite movies, built with pure HTML.</p>
-                </div>
-            </a>
-
-            <a href="./public/birthday.html" class="project-card">
-                <img src="./assets/images/ss1.png" alt="Birthday Invitation Project Screenshot">
-                <div class="card-content">
-                    <h2>Birthday Invitation Project</h2>
-                    <p>A fun, digital invitation card for a birthday celebration event.</p>
-                </div>
-            </a>
+            <h2>Key Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">HTML5 & CSS3</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Git</span>
+            </div>
             
-            </main>
-
-        <footer>
-            <nav class="footer-nav">
-                <a href="./public/about.html">About Me</a>
-                <a href="./public/contact.html">Contact Me</a>
-            </nav>
-        </footer>
-    </div>
-
+            <a href="#" class="cta-button">Download CV</a>
+        </div>
+    </main>
 </body>
 </html>
