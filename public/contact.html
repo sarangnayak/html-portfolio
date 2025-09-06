@@ -4,27 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
     <style>
         body {
             
-            background-color: #f0f0f0; 
-            font-family: sans-serif;
-            line-height: 1.6;
+            background: linear-gradient(135deg, #ece9e6, #ffffff);
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
             padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .contact-card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-card h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .contact-item i {
+            font-size: 1.5em;
+            color: #3498db;
+            margin-right: 20px;
+            width: 30px; 
+        }
+        
+        .contact-item a {
+            text-decoration: none;
+            color: #555;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #3498db; /* Highlight on hover */
         }
     </style>
 </head>
 <body>
 
-    <h1>Contact Me</h1>
-    <p>Phone Number- +91 93672 38287</p>
-    <p>Email address- sarangnayak268@gmail.com</p>
-    <p>Address:</p>
-    <p>
-      Sector 65, M3M Golf Estate,<br>
-      St. Andrews, 28th & 29th floor,<br>
-      Gurugram, Haryana - 122102.<br>
-    </p>
+    <div class="contact-card">
+        <h1>Contact Me</h1>
+        
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919367238287">+91 93672 38287</a>
+        </div>
+        
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:sarangnayak268@gmail.com">sarangnayak268@gmail.com</a>
+        </div>
+        
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <address style="font-style: normal;">
+                Sector 65, M3M Golf Estate,<br>
+                St. Andrews, 28th & 29th floor,<br>
+                Gurugram, Haryana - 122102.
+            </address>
+        </div>
+    </div>
 
 </body>
 </html>
