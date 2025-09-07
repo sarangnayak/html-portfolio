@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarang Nayak | Advanced Contact Page</title>
-    
+    <title>Sarang Nayak | Contact Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
     <style>
         :root {
             --primary-color: #007bff;
-            --secondary-color: #6c757d;
             --background-color-start: #1a2a6c;
             --background-color-mid: #b21f1f;
             --background-color-end: #fdbb2d;
@@ -23,13 +19,7 @@
             --border-color: rgba(255, 255, 255, 0.2);
             --input-background: rgba(0, 0, 0, 0.2);
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Poppins', sans-serif;
             color: var(--text-color);
@@ -37,18 +27,31 @@
             background-size: 400% 400%;
             animation: gradientAnimation 15s ease infinite;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             padding: 2rem;
         }
-
         @keyframes gradientAnimation {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--card-background);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: background-color 0.3s ease;
+        }
+        .back-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
         .contact-container {
             width: 100%;
             max-width: 1000px;
@@ -57,43 +60,18 @@
             gap: 2rem;
             background: var(--card-background);
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
             border-radius: 20px;
             border: 1px solid var(--border-color);
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
             overflow: hidden;
-            animation: fadeIn 1s ease-out;
         }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
         .contact-info {
             padding: 2.5rem;
             background: rgba(0,0,0,0.1);
         }
-
-        .contact-info h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-        }
-
-        .info-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .info-item i {
-            font-size: 1.5rem;
-            color: var(--text-color);
-            margin-right: 1rem;
-            width: 25px;
-        }
-        
+        .contact-info h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+        .info-item { display: flex; align-items: center; margin-bottom: 1.5rem; }
+        .info-item i { font-size: 1.5rem; margin-right: 1rem; width: 25px; }
         .info-item a, .info-item address {
             color: var(--text-color);
             text-decoration: none;
@@ -102,26 +80,10 @@
             opacity: 0.8;
             transition: opacity 0.3s ease;
         }
-
-        .info-item a:hover {
-            opacity: 1;
-        }
-
-        .contact-form {
-            padding: 2.5rem;
-        }
-
-        .contact-form h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-        }
-        
-        .input-group {
-            position: relative;
-            margin-bottom: 1.5rem;
-        }
-
+        .info-item a:hover { opacity: 1; }
+        .contact-form { padding: 2.5rem; }
+        .contact-form h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+        .input-group { margin-bottom: 1.5rem; }
         .input-field {
             width: 100%;
             padding: 0.8rem;
@@ -134,20 +96,9 @@
             outline: none;
             transition: border-color 0.3s ease;
         }
-        
-        .input-field::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        .input-field:focus {
-            border-color: var(--primary-color);
-        }
-        
-        textarea.input-field {
-            resize: vertical;
-            min-height: 120px;
-        }
-
+        .input-field::placeholder { color: rgba(255, 255, 255, 0.5); }
+        .input-field:focus { border-color: var(--primary-color); }
+        textarea.input-field { resize: vertical; min-height: 120px; }
         .submit-btn {
             width: 100%;
             padding: 1rem;
@@ -156,34 +107,18 @@
             border-radius: 8px;
             color: #fff;
             font-size: 1.1rem;
-            font-weight: 600;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
-        
-        .submit-btn:hover {
-            background-color: #0056b3;
-            transform: translateY(-2px);
-        }
-        
-        #form-status {
-            margin-top: 1rem;
-            font-weight: 500;
-            height: 20px;
-        }
-
+        .submit-btn:hover { background-color: #0056b3; transform: translateY(-2px); }
+        #form-status { margin-top: 1rem; height: 20px; }
         @media (max-width: 900px) {
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-            .contact-info {
-                border-bottom: 1px solid var(--border-color);
-            }
+            .contact-container { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-
+    <a href="index.html" class="back-link">← Go Back to Portfolio</a>
     <main class="contact-container">
         <section class="contact-info">
             <h2>Get in Touch</h2>
@@ -203,7 +138,6 @@
                 </address>
             </div>
         </section>
-
         <section class="contact-form">
             <h2>Send a Message</h2>
             <form id="main-contact-form">
@@ -224,29 +158,22 @@
             </form>
         </section>
     </main>
-
     <script>
         const form = document.getElementById('main-contact-form');
         const statusEl = document.getElementById('form-status');
-
         form.addEventListener('submit', function(event) {
             event.preventDefault();
-            
             statusEl.textContent = 'Sending...';
             statusEl.style.color = '#ffffff';
-
             setTimeout(() => {
                 statusEl.textContent = 'Message sent successfully!';
                 statusEl.style.color = '#4CAF50';
                 form.reset();
-
                 setTimeout(() => {
                     statusEl.textContent = '';
                 }, 5000);
-
             }, 2000);
         });
     </script>
-
 </body>
 </html>
