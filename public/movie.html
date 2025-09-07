@@ -4,29 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarang's Top Movies</title>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
     <style>
         :root {
-            --primary-color: #e50914; /* Netflix-inspired red */
+            --primary-color: #e50914;
             --background-color-start: #141e30;
             --background-color-end: #243b55;
             --text-color: #e0e0e0;
             --card-background: rgba(255, 255, 255, 0.05);
             --border-color: rgba(255, 255, 255, 0.2);
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Poppins', sans-serif;
             color: var(--text-color);
@@ -36,165 +27,97 @@
             min-height: 100vh;
             padding: 2rem 1rem;
         }
-
         @keyframes gradientAnimation {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-
-        .main-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
+        .main-container { max-width: 1200px; margin: 0 auto; text-align: center; }
+        .main-container h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .main-container h2 { font-size: 1.2rem; font-weight: 300; margin-bottom: 3rem; opacity: 0.8; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--card-background);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: background-color 0.3s ease;
         }
-        
-        .main-container h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
+        .back-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
         }
-
-        .main-container h2 {
-            font-size: 1.2rem;
-            font-weight: 300;
-            margin-bottom: 3rem;
-            opacity: 0.8;
-        }
-
         .movie-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
-
         .movie-card {
             background: var(--card-background);
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
             border-radius: 15px;
             border: 1px solid var(--border-color);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
             overflow: hidden;
             text-align: left;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: fadeIn 0.5s ease-out forwards;
+            transition: transform 0.3s ease;
         }
-
-        .movie-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.5);
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .movie-poster img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .card-content {
-            padding: 1.5rem;
-        }
-
-        .card-content h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        
-        .rating {
-            margin-bottom: 1rem;
-            color: #f5c518; /* IMDb yellow */
-        }
-        
-        .card-content p {
-            font-size: 0.9rem;
-            line-height: 1.6;
-            opacity: 0.8;
-        }
-        
+        .movie-card:hover { transform: translateY(-10px); }
+        .movie-poster img { width: 100%; display: block; }
+        .card-content { padding: 1.5rem; }
+        .card-content h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .rating { margin-bottom: 1rem; color: #f5c518; }
+        .card-content p { font-size: 0.9rem; line-height: 1.6; opacity: 0.8; }
     </style>
 </head>
 <body>
-
     <div class="main-container">
+        <a href="index.html" class="back-link">← Go Back to Portfolio</a>
         <h1>The Best Movies According to Sarang</h1>
         <h2>My top 5 movies of all-time.</h2>
-
         <div class="movie-grid">
-            
             <div class="movie-card">
-                <div class="movie-poster">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_FMjpg_UX1000_.jpg" alt="John Wick Poster">
-                </div>
+                <div class="movie-poster"><img src="https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_FMjpg_UX1000_.jpg" alt="John Wick Poster"></div>
                 <div class="card-content">
                     <h3>JOHN WICK</h3>
-                    <div class="rating">
-                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i>
-                    </div>
+                    <div class="rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i></div>
                     <p>This movie series is about action and gun fights, with a role played by Keanu Reeves.</p>
                 </div>
             </div>
-
             <div class="movie-card">
-                <div class="movie-poster">
-                    <img src="https://m.media-amazon.com/images/M/MV5BYzEwZjczOTktYzU1OS00YjJlLTgyY2UtNWEzODBlN2RjZDEwXkEyXkFqcGc@._V1_.jpg" alt="Fast & Furious Poster">
-                </div>
+                <div class="movie-poster"><img src="https://m.media-amazon.com/images/M/MV5BYzEwZjczOTktYzU1OS00YjJlLTgyY2UtNWEzODBlN2RjZDEwXkEyXkFqcGc@._V1_.jpg" alt="Fast & Furious Poster"></div>
                 <div class="card-content">
                     <h3>FAST & FURIOUS</h3>
-                    <div class="rating">
-                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i>
-                    </div>
+                    <div class="rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i></div>
                     <p>This series is about action, drama and cars. The main actor is Vin Diesel as Dom Toretto.</p>
                 </div>
             </div>
-
             <div class="movie-card">
-                <div class="movie-poster">
-                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="The Transformers Poster">
-                </div>
+                <div class="movie-poster"><img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="The Transformers Poster"></div>
                 <div class="card-content">
                     <h3>THE TRANSFORMERS</h3>
-                    <div class="rating">
-                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> <i class="far fa-star"></i>
-                    </div>
+                    <div class="rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> <i class="far fa-star"></i></div>
                     <p>This movie has 5 parts and is a Sci-Fi movie based on advanced robots.</p>
                 </div>
             </div>
-
             <div class="movie-card">
-                <div class="movie-poster">
-                    <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="The Avengers Poster">
-                </div>
+                <div class="movie-poster"><img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="The Avengers Poster"></div>
                 <div class="card-content">
                     <h3>THE AVENGERS</h3>
-                    <div class="rating">
-                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                    </div>
+                    <div class="rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
                     <p>This movie series is also a Sci-Fi series, with 4 parts in the main saga.</p>
                 </div>
             </div>
-            
             <div class="movie-card">
-                <div class="movie-poster">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_FMjpg_UX1000_.jpg" alt="Iron Man Poster">
-                </div>
+                <div class="movie-poster"><img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_FMjpg_UX1000_.jpg" alt="Iron Man Poster"></div>
                 <div class="card-content">
                     <h3>IRON MAN</h3>
-                    <div class="rating">
-                        <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i>
-                    </div>
+                    <div class="rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i></div>
                     <p>This series has 3 parts and the main character is Tony Stark, played by Robert Downey Jr.</p>
                 </div>
             </div>
-
         </div>
     </div>
-
 </body>
 </html>
