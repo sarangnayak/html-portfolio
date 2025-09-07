@@ -3,31 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Information</title>
+    <title>Birthday Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            
-            background-color: #adabab; 
-            font-family: sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3d9e8;
+            color: #333;
             line-height: 1.6;
             padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 { color: #d94a8c; }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #eee;
+            margin: 1.5rem 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+        ul {
+            list-style-position: inside;
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background-color: #d94a8c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .back-link:hover {
+            background-color: #c23b78;
         }
     </style>
 </head>
 <body>
-
-<h1>It's my birthday</h1>
-<hr>
-<h2>Ont he 10th of May</h2>
-<img src="https://raw.githubusercontent.com/appbrewery/webdev/main/birthday-cake3.4.jpeg">
-<h3>What to bring:</h3>
-<ul>
-    <li>Baloons</li>
-    <li>Cake</li>
-    <li>An Appetite</li>
-</ul>
-<h2>There is where you need to go:</h2>
-<a href="https://www.google.com/maps/place/M3M+Golfestate/@28.401742,77.0633602,448m/data=!3m1!1e3!4m10!1m2!2m1!1sm3m+golf+estate!3m6!1s0x390d22613759d2ef:0x33c234317fc5ea64!8m2!3d28.4011219!4d77.0649227!15sCg9tM20gZ29sZiBlc3RhdGVaESIPbTNtIGdvbGYgZXN0YXRlkgEPaG91c2luZ19zb2NpZXR54AEA!16s%2Fg%2F1td_3kmr?entry=ttu&g_ep=EgoyMDI1MDMzMS4wIKXMDSoASAFQAw%3D%3D">
-    <abbr title="This is an link to google maps">Google Maps</abbr></a>
-
+    <div class="container">
+        <h1>It's My Birthday!</h1>
+        <hr>
+        <h2>On the 10th of May</h2>
+        <img src="https://raw.githubusercontent.com/appbrewery/webdev/main/birthday-cake3.4.jpeg" alt="Birthday Cake">
+        <h3>What to bring:</h3>
+        <ul>
+            <li>Balloons</li>
+            <li>Cake</li>
+            <li>An Appetite</li>
+        </ul>
+        <h2>This is where you need to go:</h2>
+        <a href="https://www.google.com/maps/place/M3M+Golfestate/@28.401742,77.0633602,448m/data=!3m1!1e3!4m10!1m2!2m1!1sm3m+golf+estate!3m6!1s0x390d22613759def:0x33c234317fc5ea64!8m2!3d28.4011219!4d77.0649227!15sCg9tM20gZ29sZiBlc3RhdGVaESIPbTNtIGdvbGYgZXN0YXRlkgEPaG91c2luZ19zb2NpZXR54AEA!16s%2Fg%2F1td_3kmr?entry=ttu&g_ep=EgoyMDI1MDMzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+            Google Maps Link
+        </a>
+        <br>
+        <a href="./index.html" class="back-link">← Go Back to Portfolio</a>
+    </div>
+</body>
 </html>
+
