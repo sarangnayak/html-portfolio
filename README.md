@@ -14,7 +14,7 @@
 ---
 
 ## 🖼️ Preview  
-![HTML Portfolio Preview](./assets/preview.png) 
+![HTML Portfolio Preview](./image1.png) 
 
 ---
 
