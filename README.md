@@ -35,3 +35,11 @@ It uses vanilla HTML, CSS, and JavaScript for simplicity and ease of deployment.
 ---
 
 ## 📂 Folder Structure  
+```
+html-portfolio/
+│
+├── index.html        # Main markup
+├── style.css         # Styling, layout, responsive rules
+├── script.js         # (Optional) JavaScript for interactivity or scroll effects
+└── assets/            # Images, icons, preview screenshot
+```
