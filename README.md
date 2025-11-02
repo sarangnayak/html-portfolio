@@ -14,8 +14,7 @@
 ---
 
 ## 🖼️ Preview  
-![HTML Portfolio Preview](./assets/preview.png)  
-*(Replace this with a screenshot of your portfolio placed in the `assets/` folder.)*
+![HTML Portfolio Preview](./assets/preview.png) 
 
 ---
 
