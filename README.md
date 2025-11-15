@@ -15,3 +15,20 @@
 
 ## 🖼️ Preview  
 *> (`/image1.png`)*
+---
+✨ Overview
+
+A clean and minimal HTML-based personal portfolio, built to showcase
+your work, projects, and skills with simplicity and elegance.
+
+This version is fully static — ideal for beginners and for deploying quickly
+on GitHub Pages without any frameworks.
+
+⸻
+
+🧠 Features
+	•	📱 Fully responsive layout
+	•	🎯 Simple and readable structure
+	•	🎨 Clean sectioning: Hero, About, Projects, Contact
+	•	⚡ Lightweight (no frameworks)
+	•	🚀 Instant deployment using GitHub Pages
