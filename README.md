@@ -63,3 +63,12 @@ Update:
 	•	Animations
 
 All inside the same easy structure.
+
+🤝 Contributing
+
+Feel free to improve or fork this project.
+```
+git checkout -b feature/xyz
+git commit -m "Added new feature"
+git push origin feature/xyz
+```
