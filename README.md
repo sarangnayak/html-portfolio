@@ -14,4 +14,4 @@
 ---
 
 ## 🖼️ Preview  
-> (`assets/image1.png`)
+*> (`assets/image1.png`)*
