@@ -24,7 +24,7 @@ your work, projects, and skills with simplicity and elegance.
 This version is fully static — ideal for beginners and for deploying quickly
 on GitHub Pages without any frameworks.
 
-⸻
+---
 
 🧠 Features
 	•	📱 Fully responsive layout
@@ -32,6 +32,7 @@ on GitHub Pages without any frameworks.
 	•	🎨 Clean sectioning: Hero, About, Projects, Contact
 	•	⚡ Lightweight (no frameworks)
 	•	🚀 Instant deployment using GitHub Pages
+---
 ```
 html-portfolio/
 │
@@ -39,7 +40,7 @@ html-portfolio/
 ├── style.css         # All styles
 ├── script.js         # Optional animations/interactions
 └── assets/           # Images, icons, preview screenshot
-
+---
 ```
 🚀 Getting Started
 
@@ -63,7 +64,7 @@ Update:
 	•	Animations
 
 All inside the same easy structure.
-
+---
 🤝 Contributing
 
 Feel free to improve or fork this project.
@@ -73,14 +74,14 @@ git commit -m "Added new feature"
 git push origin feature/xyz
 ```
 📜 License
-
+---
 MIT — free to modify and use.
 
-⸻
+---
 
 👤 Author
 
 Sarang Nayak
 🔗 GitHub: https://github.com/sarangnayak
 🔗 Portfolio: https://sarangnayak.github.io
-⸻
+---
