@@ -85,3 +85,4 @@ Sarang Nayak
 🔗 GitHub: https://github.com/sarangnayak
 🔗 Portfolio: https://sarangnayak.github.io
 ---
+⭐ If you like this project, please give it a star — it motivates a lot!
