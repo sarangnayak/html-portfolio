@@ -54,3 +54,12 @@ Simply open:
 ```
 index.html
 ```
+3️⃣ Customize
+
+Update:
+	•	Text
+	•	Images
+	•	Colors
+	•	Animations
+
+All inside the same easy structure.
