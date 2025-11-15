@@ -72,3 +72,15 @@ git checkout -b feature/xyz
 git commit -m "Added new feature"
 git push origin feature/xyz
 ```
+📜 License
+
+MIT — free to modify and use.
+
+⸻
+
+👤 Author
+
+Sarang Nayak
+🔗 GitHub: https://github.com/sarangnayak
+🔗 Portfolio: https://sarangnayak.github.io
+⸻
