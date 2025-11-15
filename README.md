@@ -32,3 +32,12 @@ on GitHub Pages without any frameworks.
 	•	🎨 Clean sectioning: Hero, About, Projects, Contact
 	•	⚡ Lightweight (no frameworks)
 	•	🚀 Instant deployment using GitHub Pages
+```
+html-portfolio/
+│
+├── index.html        # Main page
+├── style.css         # All styles
+├── script.js         # Optional animations/interactions
+└── assets/           # Images, icons, preview screenshot
+
+```
