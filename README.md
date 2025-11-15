@@ -48,3 +48,9 @@ html-portfolio/
 git clone https://github.com/sarangnayak/html-portfolio.git
 cd html-portfolio
 ```
+2️⃣ Open in Browser
+
+Simply open:
+```
+index.html
+```
