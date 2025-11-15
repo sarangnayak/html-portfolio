@@ -41,3 +41,10 @@ html-portfolio/
 └── assets/           # Images, icons, preview screenshot
 
 ```
+🚀 Getting Started
+
+1️⃣ Clone the Repo
+```
+git clone https://github.com/sarangnayak/html-portfolio.git
+cd html-portfolio
+```
